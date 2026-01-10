@@ -1,0 +1,306 @@
+<!DOCTYPE html> 
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrícia Pattas – Vendas e Serviços</title>
+
+  <style>
+    :root {
+      --roxo: #6a0dad;
+      --lilas: #d8b4f8;
+      --amarelo: #f9dc5c;
+      --fundo: #f4f1fa;
+      --texto: #2e2e2e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--roxo), #4b087a);
+      color: #fff;
+      padding: 56px 16px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.12), transparent 60%);
+      pointer-events: none;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      letter-spacing: 0.04em;
+      margin: 0 0 12px;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      opacity: 0.95;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background: var(--lilas);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 14px 12px;
+      backdrop-filter: saturate(120%);
+    }
+
+    nav a {
+      color: var(--roxo);
+      font-weight: 600;
+      text-decoration: none;
+      position: relative;
+      padding: 4px 0;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: var(--roxo);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 24px 16px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--roxo);
+      text-align: center;
+      margin-bottom: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ===== CARDS ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .produto, .servico, .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(106,13,173,0.14);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .produto:hover, .servico:hover, .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 36px rgba(106,13,173,0.18);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .btn, .btn-whatsapp {
+      display: inline-block;
+      background: var(--amarelo);
+      color: var(--roxo);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn:hover, .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      background: var(--roxo);
+      color: white;
+      text-align: center;
+      padding: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Patrícia Pattas</h1>
+  <p>Vendas e serviços com sofisticação, precisão e confiança</p>
+</header>
+
+<nav>
+  <a href="#produtos">Produtos</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#maquiagem">Maquiagem</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="produtos">
+  <h2>Produtos</h2>
+
+  <div class="grid">
+
+
+    <div class="produto">
+      <img src="https://scontent-cpt1-1.xx.fbcdn.net/v/t1.6435-9/171847438_1353815051640676_4439554293050690979_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH8sC59_CH8LYrcIP0aGqXnZkoAuHaqG-pmSgC4dqob6g3qagrgPuL1IN-mPXcaepyEb3BPXdmfK-zcdeQpOUQQ&_nc_ohc=6ItXIX3tkCsQ7kNvwEjgZL-&_nc_oc=AdlTLV_g9vHJCn1oYxnHw2O9L_xzqt_2oft9dkkSDEaxhS_Drtz1TcDOcInrkDU4OUo08tjKnKaP7VYkR1sKe4-P&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=MYuAyTAwTAVvr5SVgGr_gQ&oh=00_AfrfI2oR5ZCBX8M5eFtevEwFu8bgnGLISOmFj7F8klih_g&oe=698A390D    ">
+      <h3>Conjunto Crochê Praia</h3>
+      <p>Conjunto artesanal em crochê, ideal para usar na praia.</p>
+      <strong>25.000 KZ</strong><br>
+      <a class="btn-whatsapp" target="_blank"
+        href="https://wa.me/244926837464?text=Olá,%20gostaria%20de%20comprar%20o%20Conjunto%20Crochê%20Praia.">
+        Comprar via WhatsApp
+      </a>
+    </div>
+
+    <div class="produto">
+      <img src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/470870945_2269706376718201_1226928014039339194_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEJTyYp1a_Z0YxZS_yvIE1zycB9OyvKqErJwH07K8qoSn1r87GvFGSjs4zDOrfBzo-hPdlwp_MyfPwgtcnTnNKr&_nc_ohc=oYH6VWQr3iQQ7kNvwF_7LYw&_nc_oc=AdnN5pd1gf0Ry0UUZUEE8v87zLmXvz-6edZNNC-t66J_9dpxx2AIyiFlkN8H_ckzfPEwyrvYmrbxKbG4sXnH58Rc&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=TqTTHCafVGLEPPgBgGbVzA&oh=00_Afr07EA4JzjQZqKILdQNdI9SzvyO_XiwDpwpNvGiSi0O4Q&oe=69689B49">
+      <h3> conjuntos de saia e Conjunto de calça   </h3>
+      <p>Leve e estiloso em crochê.</p>
+      <strong>30.000 KZ</strong><br>
+      <a class="btn-whatsapp" target="_blank"
+        href="https://wa.me/244926837464?text=Olá,%20gostaria%20de%20comprar%20o%20Vestido%20Praia%20Crochê.">
+        Comprar via WhatsApp
+      </a>
+    </div>
+
+    <div class="produto">
+      <img src=" https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/475134222_2296910013997837_1593979410955271476_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFU4De96JajMJAHkYZA8fvclHpgzlNxP7-UemDOU3E_v-OGEPfw-eGL4O80_cLHR5a3w0LSCYQ9mFISJ1BswaZF&_nc_ohc=sry9Z0fQfY8Q7kNvwHdODJh&_nc_oc=Adm4_LykSDpIHKrbebGqpVP2G_st9lS8BdD5i0KolZ_nzUU1JaAxSVC-LQbdrsQ-oFgpRT-GWpjjFoLgNOc5vcZa&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=ycceZYfxLRjsELZNIMWXbA&oh=00_AfrmcRDM7kcD2HKkXkudvGjbsigbduEx2YzNUTMdOp4_Ew&oe=6968A77D   ">
+      <h3>Cropped de Praia Crochê</h3>
+      <p>Cropped artesanal em crochê.</p>
+      <strong>15.000 KZ</strong><br>
+      <a class="btn-whatsapp" target="_blank"
+        href="https://wa.me/244926837464?text=Olá,%20gostaria%20de%20comprar%20a%20Bolsa%20de%20Praia%20Crochê.">
+        Comprar via WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+
+  <div class="grid">
+    <div class="servico">
+      <h3>Consultoria Comercial</h3>
+      <p>Organização e divulgação de produtos.</p>
+    </div>
+
+    <div class="servico">
+      <h3>Distribuição Local</h3>
+      <p>Entregas rápidas em Angola.</p>
+    </div>
+
+    <div class="servico">
+      <img src="https://scontent-cpt1-1.xx.fbcdn.net/v/t51.75761-15/491415750_18058241234154897_6955716653653450962_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGIp-AkLGOs61fmNz4YPOEHbknabuyGAP1uSdpu7IYA_UWurKSyBK-BWbSAYPbJmoN4y3Ozi_VpnoizyKhAZrmh&_nc_ohc=3hP7FYH2ffQQ7kNvwHFzS4R&_nc_oc=Adn82YXL4CJTJt1kvis_MtIi4GcXDDkEF74C_xbOo18aURb2Bjy1zwQGeenqwWCUmyHw75YV7CTUnYORKdAcBuQV&_nc_zt=23&_nc_ht=scontent-cpt1-1.xx&_nc_gid=mrbA_H5PmV5HIeuQDwFxBg&oh=00_AfoAWGZ_uD-Po2AWF8MMIHLSZOUHNdEDqgNa8WkjTBGsqw&oe=6968BD70   ">
+      <h3>Maquiagem Profissional</h3>
+      <p>Beleza com qualidade e profissionalismo.</p>
+      <strong>25.000 KZ</strong>
+    </div>
+  </div>
+</section>
+
+<section id="maquiagem">
+  <h2>Maquiagem ao Domicílio</h2>
+  <p><strong>Cidade:</strong> 22.000 – 35.000 KZ</p>
+  <p><strong>Nova Vida / Talatona / Benfica / Kilamba:</strong> 35.000 KZ</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Agendar – Cidade</h3>
+      <input type="date" id="dataLuanda">
+      <select id="horaLuanda">
+        <option>9–10</option><option>12–13</option><option>14–15</option>
+      </select>
+      <a id="btnLuanda" class="btn" target="_blank">Agendar WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Agendar – Zonas</h3>
+      <input type="date" id="dataZona">
+      <select id="horaZona">
+        <option>9–10</option><option>12–13</option><option>14–15</option>
+      </select>
+      <a id="btnZona" class="btn" target="_blank">Agendar WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p><strong>WhatsApp:</strong> 244 926 837 464</p>
+  <p><strong>Email:</strong> pattasvendas@gmail.com</p>
+  <p><strong>Facebook:</strong>
+    <a target="_blank" href="https://www.facebook.com/share/1BoyA2k81U/">Patrícia Pattas</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 Patrícia Pattas – Todos os direitos reservados
+</footer>
+
+<script>
+  function gerarLink(btn, dataId, horaId, zona) {
+    btn.onclick = () => {
+      const data = document.getElementById(dataId).value;
+      const hora = document.getElementById(horaId).value;
+      btn.href = `https://wa.me/244926837464?text=Olá,%20gostaria%20de%20agendar%20maquiagem%20(${zona})%20para%20${data}%20às%20${hora}.`;
+    };
+  }
+
+  gerarLink(btnLuanda, 'dataLuanda', 'horaLuanda', 'Cidade');
+  gerarLink(btnZona, 'dataZona', 'horaZona', 'Zonas');
+</script>
+
+</body>
+</html>
